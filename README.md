@@ -134,7 +134,7 @@ Monthly gridded 500 meter product, which contains burning and quality assurance 
 ## 7. Thanks
 
 - Anibal Navalón Torró (Surveillance of the forest fire prevention unit of the 'Comuniad Valenciana', Spain)
-- Jonathan (Voice dubbing for the presentation video)
+- Jonathan Knowles (Voice dubbing for the presentation video)
 
 
 ## REFERENCES
