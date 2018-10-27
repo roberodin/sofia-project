@@ -107,16 +107,16 @@ For more information see the following [document](https://github.com/gohubvlc/so
 
 ## 5. OTHER SOURCES OF INFORMATION INTEGRATED IN THE PROJECT
 
-* Population Density
+* Population Density  
 Annual population density data at approximately 1 km resolution were obtained from the Landscan global population database [3]. Data is downloaded daily from: https://landscan.ornl.gov/
 
-* Visual Smoke Plume Detection
+* Visual Smoke Plume Detection  
 Aerosol optical depth (AOD) using GOES-East and GOES-West with 30 min temporal resolution [4]. Data is downloaded from: https://www.ospo.noaa.gov/Products/atmosphere/aerosol.html
 
-* Active Fires and Never Burnes Places
+* Active Fires and Never Burnes Places  
 Near real-time fire products are generated within approximately 3 hours from both the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared Imaging Radiometer Suite (VIIRS). Data is downloaded from: https://firms.modaps.eosdis.nasa.gov/
 
-* Burned Area Product (MCD45A1)
+* Burned Area Product (MCD45A1)  
 Monthly gridded 500 meter product, which contains burning and quality assurance information. Data is downloaded from: https://firms.modaps.eosdis.nasa.gov/
 
 ## 6. Team
