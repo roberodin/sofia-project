@@ -3,13 +3,13 @@
 ### Our spatial mission: Reduce the time needed for detecting fires using social networks scraping supported by AI decision making, and a mobile App where users can report alerts directly. APP includes gamification encouraging people to participate.
 
 ## 1. MOTIVATION
-Each year, 340 million hectares of vegetation around the world are destroyed or degraded by fire. These fires not only alter the structure and composition of forests, but also can open up forests to invasive species, threaten biological diversity, alter water cycles and soil fertility, and endanger the people who live in and around them.
+Each year, 340 million hectares of vegetation around the world are destroyed or degraded by fire. These fires not only alter the structure and composition of forests, but also can open up forests to invasive species, threaten biological diversity, alter water cycles and soil fertility, and endanger the people who live in and around them.  
 NASA Space Apps Challenge shows us how NASA has strived to reduce the time of early detection of fires using satellite information. However, the general public or local authorities may not be able to use this information effectively.
 
 
 ## 2. OBJECTIVE
-Our spatial mission consists in reducing the time needed for detecting fires, being helped by people even without them knowing it.
-To achieve this, the use social networks scraping, detecting fire or dangerous situations in real time. In addition to that, we have created a mobile App where users can report alerts directly, see valuable information, etc.
+Our spatial mission consists in reducing the time needed for detecting fires, being helped by people even without them knowing it.  
+To achieve this, the use social networks scraping, detecting fire or dangerous situations in real time. In addition to that, we have created a mobile App where users can report alerts directly, see valuable information, etc.  
 This mobile App also contains a collaborative tool that includes gamification, and supports decision making for AI. With this, we encourage people to participate on this prevention tool, creating fire risk consciousness.
 
 
