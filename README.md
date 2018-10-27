@@ -56,7 +56,12 @@ There is also a public website where you can download the application and find u
 
 The source code are stored under a Gihub account. It contains source code for the iOS application, Sofia server, Augmented Reality APP for Android and all graphic files, documents and prototypes. The code are under GPL license and could be used for any purpose.
 
-https://github.com/gohubvlc
+https://github.com/gohubvlc  
+
+- Project & Documentation: https://github.com/gohubvlc/sofia-project
+- APP: https://github.com/gohubvlc/sofia-app
+- Landing Page: https://github.com/gohubvlc/sofia-landing-page
+- Augmented Reality POC: https://github.com/gohubvlc/sofia-project/tree/master/Augmented%20Reality
 
 
 ## 4. MORE DETAILS
@@ -97,6 +102,7 @@ For more information see the following [document](https://github.com/gohubvlc/so
 
 
 ## 5. OTHER SOURCES OF INFORMATION INTEGRATED IN THE PROJECT
+
 * Population Density
 Annual population density data at approximately 1 km resolution were obtained from the Landscan global population database [3]. Data is downloaded daily from: https://landscan.ornl.gov/
 
