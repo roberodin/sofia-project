@@ -53,11 +53,10 @@ We invite citizens to participate in early detection through an app that allows:
 There is also a public website where you can download the application and find useful information.
 
 ### Source code
-The source code are stored under a Gihub account. It contains source code for the iOS application, Sofia server and all graphic files, documents and prototypes.
+
+The source code are stored under a Gihub account. It contains source code for the iOS application, Sofia server, Augmented Reality APP for Android and all graphic files, documents and prototypes. The code are under GPL license and could be used for any purpose.
 
 https://github.com/gohubvlc
-
-The code are under GPL license and could be used for any purpose.
 
 
 ## 4. MORE DETAILS
@@ -112,9 +111,20 @@ Monthly gridded 500 meter product, which contains burning and quality assurance 
 
 ## 6. Team
 
+- Roberto Tórtola Contreras (Project analyst) - https://www.linkedin.com/in/roberto-tortola/
+- David Pastor Calle  (Data scientist) - https://www.linkedin.com/in/david-pastor-calle/
+- Lucía Martínez Fuertes  (Creative manager) - https://www.linkedin.com/in/lucía-martínez-fuertes-4767a666/
+- José Medrano (Software Enginner) - https://www.linkedin.com/in/josemedranojimenez/
+- José Luis González Jiménez  (UX + UI + FrontEnd designer) - https://www.linkedin.com/in/joseluisgj/
+- Javier Cabañero Cabezuelo  (Augmented reality expert) - https://www.linkedin.com/in/javiercabezuelo/
+- Jordi Oliver (Social media manager) - https://www.linkedin.com/in/oliverjordi/
+- Sol Represa (Environment remote sensing specialist) - https://www.linkedin.com/in/solrepresa/
+
 
 ## 7. Thanks
 
+- Anibal Navalón Torró (Surveillance of the forest fire prevention unit of the 'Comuniad Valenciana', Spain)
+- Jonathan (Voice dubbing for the presentation video)
 
 ________________________________________
 
