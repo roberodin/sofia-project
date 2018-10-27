@@ -50,7 +50,7 @@ We invite citizens to participate in early detection through an app that allows:
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/Web%20mockup.png)
  
-There is also a public website where you can download the application and find useful information.
+There is also a public website where you can download the application and find useful information. https://gohubvlc.github.io/sofia-landing-page/dist/index.html
 
 ### Source code
 
