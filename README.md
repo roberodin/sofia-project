@@ -61,7 +61,7 @@ The source code are stored under a Gihub account. It contains source code for th
 https://github.com/gohubvlc  
 
 - Project & Documentation: https://github.com/gohubvlc/sofia-project
-- APP: https://github.com/gohubvlc/sofia-app
+- APP, Sofia Server & API: https://github.com/gohubvlc/sofia-app
 - Landing Page: https://github.com/gohubvlc/sofia-landing-page
 - Augmented Reality POC: https://github.com/gohubvlc/sofia-project/tree/master/AugmentedReality
 
