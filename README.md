@@ -38,7 +38,7 @@ In the event of a fire alert validated by the model and an authority, it will be
 *	To users of the Collaborative APP in the affected area
 *	To users subscribed to RSS such as Alexa, Google Assistant, Siri, Cortana, etc.
 
-### APP
+### APP (Smartphone)
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/APP%20Mockup.jpg)
 
@@ -61,7 +61,7 @@ The source code are stored under a Gihub account. It contains source code for th
 https://github.com/gohubvlc  
 
 - Project & Documentation: https://github.com/gohubvlc/sofia-project
-- APP: https://github.com/gohubvlc/sofia-app
+- APP, Sofia Server & API: https://github.com/gohubvlc/sofia-app
 - Landing Page: https://github.com/gohubvlc/sofia-landing-page
 - Augmented Reality POC: https://github.com/gohubvlc/sofia-project/tree/master/AugmentedReality
 
@@ -130,29 +130,29 @@ Monthly gridded 500 meter product, which contains burning and quality assurance 
 
 ## 6. CONCLUSION / FUTURE
 
-We think that the real implementation of this project is viable given that it is based on tools that have widely proven their operation in similar fields.
+We belive that this project can become a reallity because his implementation is a real possibility based on given tools that have widely proven their operation in similar fields.
 
-The project would greatly benefit the health of the planet, and of all the living beings that inhabit it. In addition, we would reduce the cost of extinguishing fires, being able to allocate that money to improve even more prevention systems such as the project itself.
+The project would greatly benefit the health of the planet, and the whole population that inhabit it. In addition, we would reduce the cost of extinguishing fires, being able to reallocate that money in improving even more the existing prevention systems, including SOFIA project.
 
-One way to improve predictions would be to differentiate between different sources of fire so that both users and fire detection algorithms learn to differentiate between smoke from forest fires and other types of fires. This, in addition, would contribute to improving the knowledge of the people about the behavior of the fire, improving their level of awareness with the problem.
-
-As a result of studying this challenge in depth, we have many ideas that could complete the project, and surely the community could contribute.
+One way to improve predictions would be to distinguish between different sources of fire so that both, users and fire detection algorithms, learn to differentiate between smoke from forest fires and other types of fires. In addition to that, this will contribute to improve the knowledge the people have about the behavior of the fire, improving their level of awareness about this problem.
 
 The project can be extrapolated to all types of disasters, since the philosophy is the same: to use humans as active or passive "sensors" as a source of global information.
+
+As a result of studying this challenge in depth, we have many ideas that could improve the project, and surely the community could contribute also.
 
 A crowfounding campaign could be created to materialize the project at a global level with crowsourcing code to involve as many people as possible from all countries, helping to obtain approaches from all parts of the planet.
 
 
 ## 7. TEAM
 
-- Roberto Tórtola Contreras (Project analyst) - https://www.linkedin.com/in/roberto-tortola/
-- David Pastor Calle  (Data scientist) - https://www.linkedin.com/in/david-pastor-calle/
-- Lucía Martínez Fuertes  (Creative manager) - https://www.linkedin.com/in/lucía-martínez-fuertes-4767a666/
+- Roberto Tórtola Contreras (Project Manager) - https://www.linkedin.com/in/roberto-tortola/
+- David Pastor Calle  (Data Scientist) - https://www.linkedin.com/in/david-pastor-calle/
+- Lucía Martínez Fuertes  (Creative Manager) - https://www.linkedin.com/in/lucía-martínez-fuertes-4767a666/
 - José Medrano (Software Enginner) - https://www.linkedin.com/in/josemedranojimenez/
 - José Luis González Jiménez  (UX + UI + FrontEnd designer) - https://www.linkedin.com/in/joseluisgj/
-- Javier Cabañero Cabezuelo  (Augmented reality expert) - https://www.linkedin.com/in/javiercabezuelo/
-- Jordi Oliver (Social media manager) - https://www.linkedin.com/in/oliverjordi/
-- Sol Represa (Environment remote sensing specialist) - https://www.linkedin.com/in/solrepresa/
+- Javier Cabañero Cabezuelo  (Augmented/Virtual Reality Expert) - https://www.linkedin.com/in/javiercabezuelo/
+- Jordi Oliver (Social Media Manager) - https://www.linkedin.com/in/oliverjordi/
+- Sol Represa (Environment Remote Sensing Specialist) - https://www.linkedin.com/in/solrepresa/
 
 
 ## 8. THANKS
