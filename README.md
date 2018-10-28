@@ -79,9 +79,11 @@ We estimate through the model explained in paper [1] the daily values of the fir
 *	Monthly burned-area (i.e, MCD45A1) at 500 m [\*]
 Data is downloaded daily from https://ladsweb.modaps.eosdis.nasa.gov and https://search.earthdata.nasa.gov [*]
 
+### Sofia Model Flow
+
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/diagrams/SoFiaModel.jpg)
 
-More information in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SofiaModel/SoFiA_model.pdf).
+he complete description of the model can be found in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SofiaModel/SoFiA_model.pdf).
 
 ### App UX flow
 We show a flowchart of the APP:
