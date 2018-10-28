@@ -64,7 +64,7 @@ https://github.com/gohubvlc
 - Augmented Reality POC: https://github.com/gohubvlc/sofia-project/tree/master/Augmented%20Reality
 
 
-## 4. MORE DETAILS
+## 4. DETAILS
 
 ### Fire Risk Model (FRM)
 
@@ -99,7 +99,7 @@ This is the ranking of users competing globally in three different categories
 More information in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SOFIA%20Social%20Network.pdf).
 
 ### Escape and evacuation routes
-Sofia APP proposes safe evacuation routes based on the identification of risk zones using Fire Risk Model information:
+Sofia APP proposes safe evacuation routes based on the identification of risk zones using Fire Risk Model information.
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/diagrams/EscapeRoutes.jpg)
 
