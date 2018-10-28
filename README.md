@@ -145,14 +145,14 @@ A crowfounding campaign could be created to materialize the project at a global 
 
 ## 7. TEAM
 
-- Roberto Tórtola Contreras (Project analyst) - https://www.linkedin.com/in/roberto-tortola/
-- David Pastor Calle  (Data scientist) - https://www.linkedin.com/in/david-pastor-calle/
-- Lucía Martínez Fuertes  (Creative manager) - https://www.linkedin.com/in/lucía-martínez-fuertes-4767a666/
+- Roberto Tórtola Contreras (Project Manager) - https://www.linkedin.com/in/roberto-tortola/
+- David Pastor Calle  (Data Scientist) - https://www.linkedin.com/in/david-pastor-calle/
+- Lucía Martínez Fuertes  (Creative Manager) - https://www.linkedin.com/in/lucía-martínez-fuertes-4767a666/
 - José Medrano (Software Enginner) - https://www.linkedin.com/in/josemedranojimenez/
 - José Luis González Jiménez  (UX + UI + FrontEnd designer) - https://www.linkedin.com/in/joseluisgj/
-- Javier Cabañero Cabezuelo  (Augmented reality expert) - https://www.linkedin.com/in/javiercabezuelo/
-- Jordi Oliver (Social media manager) - https://www.linkedin.com/in/oliverjordi/
-- Sol Represa (Environment remote sensing specialist) - https://www.linkedin.com/in/solrepresa/
+- Javier Cabañero Cabezuelo  (Augmented Reality Expert) - https://www.linkedin.com/in/javiercabezuelo/
+- Jordi Oliver (Social Media Manager) - https://www.linkedin.com/in/oliverjordi/
+- Sol Represa (Environment Remote Sensing Specialist) - https://www.linkedin.com/in/solrepresa/
 
 
 ## 8. THANKS
