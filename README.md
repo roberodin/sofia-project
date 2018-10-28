@@ -1,5 +1,7 @@
 # Sofia: Social Fire Alarm
 
+![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/logo.jpg)
+
 ### Our spatial mission: Reduce the time needed for detecting fires using social networks scraping supported by AI decision making, and a mobile App where users can report alerts directly. APP includes gamification encouraging people to participate.
 
 ## 1. MOTIVATION
