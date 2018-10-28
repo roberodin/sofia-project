@@ -63,7 +63,7 @@ https://github.com/gohubvlc
 - Project & Documentation: https://github.com/gohubvlc/sofia-project
 - APP: https://github.com/gohubvlc/sofia-app
 - Landing Page: https://github.com/gohubvlc/sofia-landing-page
-- Augmented Reality POC: https://github.com/gohubvlc/sofia-project/tree/master/Augmented%20Reality
+- Augmented Reality POC: https://github.com/gohubvlc/sofia-project/tree/master/AugmentedReality
 
 
 ## 4. DETAILS
