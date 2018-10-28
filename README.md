@@ -38,7 +38,7 @@ In the event of a fire alert validated by the model and an authority, it will be
 *	To users of the Collaborative APP in the affected area
 *	To users subscribed to RSS such as Alexa, Google Assistant, Siri, Cortana, etc.
 
-### APP
+### APP (Smartphone)
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/APP%20Mockup.jpg)
 
