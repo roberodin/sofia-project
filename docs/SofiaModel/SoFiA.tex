@@ -1,0 +1,248 @@
+\documentclass{article}  
+\usepackage[breaklinks]{hyperref}
+
+ 
+\title{Wildfires early alert model \footnote{ GO-HUB (2018) Wildfires early alert model. \textit{SOFIA: Fire Prevention Intelligence} \url{https://github.com/gohubvlc/sofia-project}}}
+
+\date{October, 2018}
+\author{GO-HUB}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Introduction}
+
+Fires burn millions of hectares of plant surface in the earth every year.
+This has a great economic, human and ecological cost.
+Early detection of wildfires is key to minimizing their effects through early intervention of forest services.
+Also, could prevent possible loss of human life by alerting people in areas at risk.
+
+Currently, each region depends on its own fire detection system.
+Despite this, there are areas of the Earth populated with vegetation that do not have any fire warning system or that have inefficient fire warning systems.
+
+A global fire warning solution is suitable both for areas with low or no coverage and for strengthening warning systems in areas with a functional warning system.
+There are fire detection systems such as the \textit{NASA} which warns of fires within three hours of their occurrence (\url{http://search.earthdata.nasa.gov}).
+Unfortunately sometimes 3 hours is too long.
+Fires are hardly controllable once they have begun to spread.
+
+This work proposes a global fire detection system based on combining fire data from \textit{NASA} and other sources with real-time analysis of social networks.
+In some cases this system could reduce the time of the fire detection system from the \textit{NASA}.
+The system does not require the active collaboration of people although it can benefit from it.
+
+Generally speaking, the early warning model consists of 4 parts:
+\begin{enumerate}
+\item Fire risk model:
+	the global fire risk is estimated daily using a model based on \cite{chowdhury2015development} achieving a spatial resolution of 500m.
+\item Selection mask:
+	Excludes those areas that are not of interest to the model.
+\item Textual analysis of social networks and APIs:
+	As many text messages as possible are analyzed on social networks and other selected sources in a pseudo-random manner looking for wildfire alarms.
+\item Analysis of images:
+	If text analysis is not enough to decide whether to issue an alert, the decision is reinforced by analyzing social network images and satellite images.
+\item Decision-making based on a linear model:
+	Combining the analysis of social networks and the fire risk model a linear model evaluates whether to issue a fire alert.
+
+\end{enumerate}
+
+\section{The model}
+
+The following section will develop the model step by step.
+
+\subsection{Fire risk model}
+
+Starting in the last century fire danger rating (FDR) systems have been in operation in many countries around the world, especially in Canada, Australia, Russia and the United States \cite{chowdhury2015operational}. In all cases, the interest is in the pre-fire environment  \cite{jain2004}, which refers to the type and condition of fuels as influenced by climate, weather and land management.
+
+Satellite remote sensing contributes greatly to global environmental monitoring, offering accessible, low-cost, worldwide and updated daily information. Taking advantage of this information is key to know the level of fire risk before a fire occurs.
+
+The prediction of fire risk areas has a central role in prevention and timely assistance. In this work we propose the use of different satellite products provided by NASA, based on scientific evidence on the subject \cite{chowdhury2015operational}, \cite{chowdhury2013use}, to generate a fire risk model.
+
+\subsubsection{Data Requirements}
+
+It is possible to predict the conditions of fire risk from the temporal analysis of environmental variables built by remote sensing. The selection of the satellite products is based on the relevance of the measured variables, good spatial resolution and high revisit frequency. In turn, the model includes satellite products with processed information such as monthly burned areas or annual land cover.
+
+The included satellite images have been:
+
+\begin{enumerate}
+    \item Daily surface temperature (TS) at 1km spatial resolution (i.e, MOD11A1) 
+    \item Daily precipitately water (PW) at 1km spatial resolution (i.e, MOD05L2) 
+    \item Daily aerosol optical depth model (AOD) at 1km spatial resolution (i.e, MCD19A2) 
+    \item 8-day composite of surface reflectance at 500m spatial resolution (i.e, MOD09A1) 
+    \item Monthly burned-area at 500m spatial resolution (i.e, MCD45A1) [*]
+    \item Annual land cover map at 500m spatial resolution (i.e, MCD12Q1) [*]
+\end{enumerate}
+
+Data can be downloaded daily from \url{https://ladweb.modaps.eosdis.nasa.gov} and \url{https://search.earthdata.nasa.gov}.
+
+The images were re-sampled to 500m resolution to reduce between-pixel heterogeneity, mosaicked into a single image and filtered with a 3x3 pixel moving window using a Gaussian averaging kernel. The selected project was WGS84.
+
+The following indices can be constructed from satellite products: 
+
+\begin{itemize}
+    \item Normalized Multiband Drought Index (NMDI) is calculate with the surface reflectance by the near infrared (NIR) and shortwave infrared bands centred at 860 nm, 1640 nm, and 2130 nm, as shown below: 
+    
+    $$ NMDI = \frac{R_{860nm} - (R_{1640nm}-R_{2130nm})}{R_{860nm} + (R_{1640nm}-R_{2130nm})} $$
+    
+    where R represents the apparent reflectance observed by a satellite sensor. NMDI is useful for monitoring soil and vegetation moisture \cite{wang2008forest}.
+
+    \item Normalized Difference Vegetation Index (NDVI) is carried out with the red and NIR spectral bands centered at 640 nm and 860 nm as seen:
+    
+    $$ NDVI = \frac{R_{NIR} - R_{red}}{R_{NIR} + R_{red}} $$
+    
+    where R is the surface reflectance values of MODIS. NDVI is more directly related to chlorophyll activity of the vegetation than to droughtiness conditions \cite{leblon2001monitoring}.
+    
+\end{itemize}
+
+The MCD12Q1 product provides six different classifications \cite{friedl2015mcd12q1}. These include the Geosphere-Biosphere Programme land cover classification, the University of Maryland classification scheme, the Biome classification scheme described by \cite{running2004continuous}, the LAI/fPAR Biome scheme described by \cite{myneni2002global}, the Plant Functional Type scheme described by \cite{bonan2002landscapes}, and the FAO-Land Cover Classification System that contains the layers: land cover (LCC1), land use (LCC2) and the surface hydrology (LCC3).
+
+All water bodies are masked using the surface hydrology (MCD12Q1 - LCC3).
+
+The active fire obtained from the products VNP14 (M-band) and VNP14IMG (I-band) is used for model validation. Each active fire location represents the center of a 1 km pixel that is marked by the algorithm as containing a fire within the pixel. The images can be downloaded from 
+\url{https://ladsweb.modaps.eosdis.nasa.gov}.
+
+
+\subsubsection{Filling the missing data}
+
+Remotely sensed imagery time-series often presents gaps that reduce the usefulness of these data sources for modeling and monitoring environmental phenomena. In particular, gaps are problematic  in tropical and subtropical areas where persistent cloud cover can obscure portions of the image seasonally or throughout the year. It is possible to find in the bibliography different approaches to fill the gaps, being more convenient for the characteristics of this study, to select a Spatio-temporal gap-filling.
+
+We select the methodology present in \cite{weiss2014effective}  that leverages the wealth of empirical information present within large imagery time-series to fill missing pixels. Their method produces highly accurate results while utilizing a conceptually simple, computationally efficient algorithmic framework. 
+
+\subsubsection{Risk model algorithm}
+
+Detailed methodology is based on work published by \cite{chowdhury2013use}. The proposed system consisted of eight stages:
+
+\begin{enumerate}
+    \item To maximize the potential of the model, all six land cover categories are used. 
+    
+    \item We relate the input variables (TS, PW, AOD, NMDI and NDVI) for each of the land use categories. 
+    
+    \item We calculated the specific average values by study category for the input variables during the period $i$ (i.e., $\overline{NMDI_i}$, $\overline{NDVI_i}$) and $j$ day (i.e., $\overline{PW_j}$, $\overline{TS_j}$ and $\overline{AOD_j}$) using areas that did not have fires during the last year. At the same time, as these variables present a temporary behavior, the seasonal averages were calculated to decrease the error in the estimation.
+    
+    \item For each pixel and throughout each period $i+1$ or day $j+1$, the fire danger conditions were calculated. For this purpose, the instantaneous values of the input were compared with their respective seasonal mean values calculated in the previous step.  
+    
+    \item As a condition of high fire danger, the prevalence of the following criteria was analyzed:
+    
+    \begin{itemize}
+        \item $TS_j \geq \overline{TS_j} $: high temperatures may favour fire
+        \item $ NMDI_i \leq \overline{NMDI_i} $: low vegetation moisture may favour fire
+        \item $NDVI_i \leq \overline{NDVI_i}$: low greenlees may indicate dry vegetation and therefore a good fuel
+        \item $PW_j \leq \overline{PW_j}$: The low level of water vapour in the atmosphere could be associated with the flammability of fuels
+        \item $AOD_j \geq \overline{AOD_j}$ high AOD values may indicate the presence of smoke
+    \end{itemize}
+    
+    \item Five hazard categories were established based on the following conditions: 
+    
+    \begin{itemize}
+        \item Extremely high: when all five variables belong to the high hazard class
+        \item Very high: when at least three of the five variables belong to the high hazard class 
+        \item High: when at least two of the five variables belong to the high hazard class
+        \item Moderate: when at least one of the five variables belongs to the high hazard class
+        \item Low: when all five variables belong to the low hazard class.
+    \end{itemize}
+    
+    \item The FDR was applied of risk according to the risk category most frequently for each land cover. 
+    
+    \item In order to validate the modeled categories, the historical information from 2011 (VIIRS images available) of active fires and monthly burned-area was employed.
+
+\end{enumerate}
+
+\subsection{Selection masks} \label{masks}
+
+The early warning fire system proposed in this work operates on a global scale.
+This implies that it will require a large computing capacity.
+In order to reduce the load of calculations some areas will be excluded using Boolean filters.
+These areas are:
+\begin{itemize}
+	\item Areas with more than 10k inhabitants$/km^2$ obtained from \url{https://landscan.ornl.gov}.
+We assume that these areas are urban areas.
+It is not useful to alert of fires in these areas since the goal of the model is to generate wildfire alerts.
+Furthermore, if a fire were to be observed from a densely populated urban nucleus, the authorities would undoubtedly be alerted in time as a large number of people would be able to see it.
+	\item Areas in which no fire has occurred since 2000 according to the \textit{NASA} fire database \textit{Fire Information for Resource Management System (FIRMS)}.
+	\item Areas in which there is an active fire according \textit{FIRM}.
+\end{itemize}.
+
+\subsection{Social network and API text analysis}
+
+In this stage as much post geolocalized on social networks and information received from the API SoFiA and related with to is downloaded.
+Those regions covered by the masks produced in the previous stage of the model will be ignored for the search \ref{masks}.
+Even ignoring these regions there is too much information on social networks to process it all.
+A selection criteria is established.
+It prioritizes the post according to the fire risk $fr$ evaluated in its location.
+In addition, a minimum threshold of $fr$ from which no post is taken into consideration, $t$, is established.
+$t$ will depend on the maximum amount of post that can be processed in each batch, $c_{max}$.
+
+
+In each batch $c_{max}$ posts are downloaded and sorted by its $fr$.
+We set $n=10$ percentiles in the range $fr > t$.
+In each of them as many post as $\int_{fr_i}^{fr_{i+1}}g(fr) \times c_{max}/(\int_t^1g(fr))$ are processed.
+They are randomly chosen from among the candidates, being $g(fr)=e^{(x-t)/(1-t)ln(2)}-1$.
+
+The selected posts are processed to be introduced into a dense neural network with a depth to be determined in an optimization process.
+The following variables are considered for the dense neural network:
+\begin{itemize}
+	\item Bag of fire-related keywords contained in each post.
+	The keywords will be determined from among those that can be found in a post that alerts about a fire.
+	For example text{fire}, text{smoke}, text{fire}, etc.
+	\item Reverse of the population density in the position of the post.
+	It is intended to penalize the areas with more population and therefore with more possibility of fire sighting.
+	\item Fire risk estimated in the first stage of the model.
+\end{itemize}
+The network has a single soft-max output that indicates if the post is alerting or not about fire.
+Positive reports are clustered whit the \textit{Mean-Shift Clustering} algorithm.
+This is simply a proposal, other clustering algorithms might be more convenient for the model.
+
+The possibility of it being a real alert is evaluated in each report as
+\[AlertRisk = \frac{p}{d\times fr}\],
+being $p$ the number of positive reports in the cluster.
+Thus, in an uninhabited area a single report would be enough to trigger the alert for a high fire risk and on the contrary many reports would be needed in a cluster with low fire risk and densely populated.
+
+\subsection{Image analysis}
+
+If $AlertRisk$ is too high with respect to an established threshold it is considered necessary to issue an alert automatically.
+If $AlertRisk$ is too low with respect to an established threshold the cluster is discarded.
+In any other case, images are requested to reinforce the area enclosed by the complex hue of the posts forming the cluster or the posts enclosed in an area of 5 km around each point if there are less than four points in a cluster.
+The images will be obtained from the following sources: post from social networks that have been evaluated and contain images, the geostationary satellite network \textit{GOES} and the SoFia API.
+These images are evaluated by a ResNet\cite{he2016deep} object detection neuronal network. It is important to note that although the architecture of the networks that process the satellite images, the images from the social networks, and the API may match their sets of images are different.
+
+Users who volunteer will also be able to catalogue images of possible fires.
+They will receive as many images as possible.
+The judgment given by the user will prevail over the model if it is the case that a same image has been classified by a human and the object identification network.
+
+
+\subsection{Decision making based on a linear model}
+
+Finally, the results are entered into a linear model with two input variables:
+\begin{itemize}
+	\item The percentage of images evaluated as fires.
+	\item The average fire risk at the points where warnings have been issued.
+\end{itemize}
+This last regressor will decide whether or not to issue a warning.
+
+\section{Training}
+
+Different parts of the model are machine learning algorithms that require training.
+This section indicates where the tagged data is obtained for each of them.
+
+It will be necessary to dedicate staff to tagging for the dense network that is used for the detection of alerts in social networks and API.
+The help of the community of SoFiA users could also be requested.
+In any case, active learning techniques will be used to determine which samples are to be tagged.
+
+Image recognition networks will be trained with images of places and dates where \textit{FIRMS} indicates that there has been a fire and have also been catalogued as fires by APP users.
+
+\section{Conclusions}
+
+A fire early warning model based on the use of social networks is proposed, limiting the study area to the maximum in order to make the analysis viable.
+
+The quality of some parts of the model will depend on the collection of sufficient data to make it viable.
+
+This work is a proposal that leaves many points open due to lack of time either to develop them fully or because they require in-depth analysis.
+Despite this, the proposal is realistic and the model is viable.
+
+\bibliographystyle{unsrt}
+
+\bibliography{mybib}
+
+
+\end{document}
+
