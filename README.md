@@ -2,7 +2,7 @@
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/logo.jpg)
 
-### Our spatial mission: Reduce the time needed for detecting fires using social networks scraping supported by AI decision making, and a mobile App where users can report alerts directly. APP includes gamification encouraging people to participate.
+### Reduce the time needed for detecting fires using social networks scraping supported by AI decision making, and a mobile App where users can report alerts directly. APP includes gamification encouraging people to participate.
 
 ## 1. MOTIVATION
 Each year, 340 million hectares of vegetation around the world are destroyed or degraded by fire. These fires not only alter the structure and composition of forests, but also can open up forests to invasive species, threaten biological diversity, alter water cycles and soil fertility, and endanger the people who live in and around them.  
@@ -52,7 +52,7 @@ We invite citizens to participate in early detection through an app that allows:
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/Web%20mockup.png)
  
-There is also a public website where you can download the application and find useful information. https://gohubvlc.github.io/sofia-landing-page/dist/index.html
+There is also a public website where you can download the application and find useful information. Please visit: https://gohubvlc.github.io/sofia-landing-page/dist/index.html
 
 ### Source code
 
@@ -82,6 +82,8 @@ Data is downloaded daily from https://ladsweb.modaps.eosdis.nasa.gov and https:/
 ### Decision Model Flow
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/diagrams/SoFiaModel.jpg)
+
+More information in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SofiaModel.pdf).
 
 ### App UX flow
 We show a flowchart of the APP:
@@ -127,7 +129,23 @@ Near real-time fire products are generated within approximately 3 hours from bot
 * Burned Area Product (MCD45A1)  
 Monthly gridded 500 meter product, which contains burning and quality assurance information. Data is downloaded from: https://firms.modaps.eosdis.nasa.gov/
 
-## 6. Team
+
+## 6. CONCLUSION / FUTURE
+
+We think that the real implementation of this project is viable given that it is based on tools that have widely proven their operation in similar fields.
+
+The project would greatly benefit the health of the planet, and of all the living beings that inhabit it. In addition, we would reduce the cost of extinguishing fires, being able to allocate that money to improve even more prevention systems such as the project itself.
+
+One way to improve predictions would be to differentiate between different sources of fire so that both users and fire detection algorithms learn to differentiate between smoke from forest fires and other types of fires. This, in addition, would contribute to improving the knowledge of the people about the behavior of the fire, improving their level of awareness with the problem.
+
+As a result of studying this challenge in depth, we have many ideas that could complete the project, and surely the community could contribute.
+
+The project can be extrapolated to all types of disasters, since the philosophy is the same: to use humans as active or passive "sensors" as a source of global information.
+
+A crowfounding campaign could be created to materialize the project at a global level with crowsourcing code to involve as many people as possible from all countries, helping to obtain approaches from all parts of the planet.
+
+
+## 7. TEAM
 
 - Roberto Tórtola Contreras (Project analyst) - https://www.linkedin.com/in/roberto-tortola/
 - David Pastor Calle  (Data scientist) - https://www.linkedin.com/in/david-pastor-calle/
@@ -139,7 +157,7 @@ Monthly gridded 500 meter product, which contains burning and quality assurance 
 - Sol Represa (Environment remote sensing specialist) - https://www.linkedin.com/in/solrepresa/
 
 
-## 7. Thanks
+## 8. THANKS
 
 - Anibal Navalón Torró (Surveillance of the forest fire prevention unit of the 'Comuniad Valenciana', Spain)
 - Jonathan Knowles (Voice dubbing for the presentation video)
