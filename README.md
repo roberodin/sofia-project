@@ -150,7 +150,7 @@ A crowfounding campaign could be created to materialize the project at a global 
 - Lucía Martínez Fuertes  (Creative Manager) - https://www.linkedin.com/in/lucía-martínez-fuertes-4767a666/
 - José Medrano (Software Enginner) - https://www.linkedin.com/in/josemedranojimenez/
 - José Luis González Jiménez  (UX + UI + FrontEnd designer) - https://www.linkedin.com/in/joseluisgj/
-- Javier Cabañero Cabezuelo  (Augmented Reality Expert) - https://www.linkedin.com/in/javiercabezuelo/
+- Javier Cabañero Cabezuelo  (Augmented/Virtual Reality Expert) - https://www.linkedin.com/in/javiercabezuelo/
 - Jordi Oliver (Social Media Manager) - https://www.linkedin.com/in/oliverjordi/
 - Sol Represa (Environment Remote Sensing Specialist) - https://www.linkedin.com/in/solrepresa/
 
