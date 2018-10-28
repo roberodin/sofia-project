@@ -109,7 +109,7 @@ For more information see the following [document](https://github.com/gohubvlc/so
 
 A social media scraper refers to an automatic web scraping tool that extracts data from social media channels, which not only include social networking sites, such as Facebook, Twitter, Instagram, LinkedIn, etc., but also include blogs, wikis, and news sites. All of these portals share something in common: they are all yielding user-generated content in the form of unstructured data that is accessible only through the web.
 
-For more information see the following [public article] (https://www.researchgate.net/publication/286928406_Towards_an_algorithm_for_efficient_use_of_social_network_resources_by_using_Web_scraping_techniques).
+For more information see the following [public article](https://www.researchgate.net/publication/286928406_Towards_an_algorithm_for_efficient_use_of_social_network_resources_by_using_Web_scraping_techniques).
 
 ## 5. OTHER SOURCES OF INFORMATION INTEGRATED IN THE PROJECT
 
