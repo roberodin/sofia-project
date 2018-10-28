@@ -136,9 +136,9 @@ The project would greatly benefit the health of the planet, and the whole popula
 
 One way to improve predictions would be to distinguish between different sources of fire so that both, users and fire detection algorithms, learn to differentiate between smoke from forest fires and other types of fires. In addition to that, this will contribute to improve the knowledge the people have about the behavior of the fire, improving their level of awareness about this problem.
 
-As a result of studying this challenge in depth, we have many ideas that could improve the project, and surely the community could contribute also.
-
 The project can be extrapolated to all types of disasters, since the philosophy is the same: to use humans as active or passive "sensors" as a source of global information.
+
+As a result of studying this challenge in depth, we have many ideas that could improve the project, and surely the community could contribute also.
 
 A crowfounding campaign could be created to materialize the project at a global level with crowsourcing code to involve as many people as possible from all countries, helping to obtain approaches from all parts of the planet.
 
