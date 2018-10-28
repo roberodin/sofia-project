@@ -83,7 +83,7 @@ Data is downloaded daily from https://ladsweb.modaps.eosdis.nasa.gov and https:/
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/diagrams/SoFiaModel.jpg)
 
-he complete description of the model can be found in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SofiaModel/SoFiA_model.pdf).
+The complete description of the model can be found in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SofiaModel/SoFiA_model.pdf).
 
 ### App UX flow
 We show a flowchart of the APP:
