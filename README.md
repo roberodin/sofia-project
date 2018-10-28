@@ -94,7 +94,7 @@ Below is a scheme of how the game works and how it integrates with the AI:
 
 This is the ranking of users competing globally in three different categories
 
-![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/Esquema-Gamificacion.jpg)
+![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/GamificationRanking.jpg)
  
 More information in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SOFIA%20Social%20Network.pdf).
 
