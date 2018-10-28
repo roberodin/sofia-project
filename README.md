@@ -130,13 +130,13 @@ Monthly gridded 500 meter product, which contains burning and quality assurance 
 
 ## 6. CONCLUSION / FUTURE
 
-We think that the real implementation of this project is viable given that it is based on tools that have widely proven their operation in similar fields.
+We belive that this project can become a reallity because his implementation is a real possibility based on given tools that have widely proven their operation in similar fields.
 
-The project would greatly benefit the health of the planet, and of all the living beings that inhabit it. In addition, we would reduce the cost of extinguishing fires, being able to allocate that money to improve even more prevention systems such as the project itself.
+The project would greatly benefit the health of the planet, and the whole population that inhabit it. In addition, we would reduce the cost of extinguishing fires, being able to reallocate that money in improving even more the existing prevention systems, including SOFIA project.
 
-One way to improve predictions would be to differentiate between different sources of fire so that both users and fire detection algorithms learn to differentiate between smoke from forest fires and other types of fires. This, in addition, would contribute to improving the knowledge of the people about the behavior of the fire, improving their level of awareness with the problem.
+One way to improve predictions would be to distinguish between different sources of fire so that both, users and fire detection algorithms, learn to differentiate between smoke from forest fires and other types of fires. In addition to that, this will contribute to improve the knowledge the people have about the behavior of the fire, improving their level of awareness about this problem.
 
-As a result of studying this challenge in depth, we have many ideas that could complete the project, and surely the community could contribute.
+As a result of studying this challenge in depth, we have many ideas that could improve the project, and surely the community could contribute also.
 
 The project can be extrapolated to all types of disasters, since the philosophy is the same: to use humans as active or passive "sensors" as a source of global information.
 
