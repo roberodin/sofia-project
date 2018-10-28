@@ -83,6 +83,8 @@ Data is downloaded daily from https://ladsweb.modaps.eosdis.nasa.gov and https:/
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/diagrams/SoFiaModel.jpg)
 
+More information in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SofiaModel.pdf).
+
 ### App UX flow
 We show a flowchart of the APP:
  
@@ -127,7 +129,12 @@ Near real-time fire products are generated within approximately 3 hours from bot
 * Burned Area Product (MCD45A1)  
 Monthly gridded 500 meter product, which contains burning and quality assurance information. Data is downloaded from: https://firms.modaps.eosdis.nasa.gov/
 
-## 6. Team
+
+## 6. CONCLUSION / FUTURE
+
+
+
+## 7. TEAM
 
 - Roberto Tórtola Contreras (Project analyst) - https://www.linkedin.com/in/roberto-tortola/
 - David Pastor Calle  (Data scientist) - https://www.linkedin.com/in/david-pastor-calle/
@@ -139,7 +146,7 @@ Monthly gridded 500 meter product, which contains burning and quality assurance 
 - Sol Represa (Environment remote sensing specialist) - https://www.linkedin.com/in/solrepresa/
 
 
-## 7. Thanks
+## 8. THANKS
 
 - Anibal Navalón Torró (Surveillance of the forest fire prevention unit of the 'Comuniad Valenciana', Spain)
 - Jonathan Knowles (Voice dubbing for the presentation video)
