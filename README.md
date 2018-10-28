@@ -2,7 +2,7 @@
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/logo.jpg)
 
-### Reduce the time needed for detecting fires using social networks scraping supported by AI decision making, and a mobile App where users can report alerts directly. APP includes gamification encouraging people to participate.
+### SofiA reduces the time needed for detecting fires using social networks scraping supported by AI decision making, and a mobile App where users can report alerts directly. APP includes gamification encouraging people to participate.
 
 ## 1. MOTIVATION
 Each year, 340 million hectares of vegetation around the world are destroyed or degraded by fire. These fires not only alter the structure and composition of forests, but also can open up forests to invasive species, threaten biological diversity, alter water cycles and soil fertility, and endanger the people who live in and around them.  
@@ -81,7 +81,7 @@ Data is downloaded daily from https://ladsweb.modaps.eosdis.nasa.gov and https:/
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/diagrams/SoFiaModel.jpg)
 
-More information in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SofiaModel.pdf).
+More information in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/Sofia_Model.pdf).
 
 ### App UX flow
 We show a flowchart of the APP:
