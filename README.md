@@ -33,7 +33,7 @@ Combining the previously processed data, a decision model based on Machine Learn
 In the event of a fire alert validated by the model and an authority, it will be communicated:
 *	To the global alert system corresponding to the affected area.
 *	Through SMS to telephone users close to the area through the following channels local telephone companies, as long as they offer their collaboration.
-*	To users of the Collaborative PPP in the affected area
+*	To users of the Collaborative APP in the affected area
 *	To users subscribed to RSS such as Alexa, Google Assistant, Siri, Cortana, etc.
 
 ### APP
@@ -50,7 +50,7 @@ We invite citizens to participate in early detection through an app that allows:
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/Web%20mockup.png)
  
-There is also a public website where you can download the application and find useful information.
+There is also a public website where you can download the application and find useful information. https://gohubvlc.github.io/sofia-landing-page/dist/index.html
 
 ### Source code
 
@@ -64,9 +64,10 @@ https://github.com/gohubvlc
 - Augmented Reality POC: https://github.com/gohubvlc/sofia-project/tree/master/Augmented%20Reality
 
 
-## 4. MORE DETAILS
+## 4. DETAILS
 
-Fire Risk Model (FRM)
+### Fire Risk Model (FRM)
+
 We estimate through the model explained in paper [1] the daily values of the fire risk rating using satellite products:
 *	Daily surface temperature at 1km (i.e, MOD11A1) spatial resolution
 *	Daily precipitable water (i.e, MOD05L2) at 1km spatial resolution
@@ -90,29 +91,38 @@ We show a flowchart of the APP:
 Below is a scheme of how the game works and how it integrates with the AI:
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/diagrams/Gamification.jpg)
+
+This is the ranking of users competing globally in three different categories
+
+![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/images/Esquema-Gamificacion.jpg)
  
 More information in the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/SOFIA%20Social%20Network.pdf).
 
 ### Escape and evacuation routes
-Sofia APP proposes safe evacuation routes based on the identification of risk zones using Fire Risk Model information:
+Sofia APP proposes safe evacuation routes based on the identification of risk zones using Fire Risk Model information.
 
 ![N|Solid](https://github.com/gohubvlc/sofia-project/blob/master/diagrams/EscapeRoutes.jpg)
 
 For more information see the following [document](https://github.com/gohubvlc/sofia-project/blob/master/docs/Escape%20routes.pdf).
 
+### Social Media Scraping
+
+A social media scraper refers to an automatic web scraping tool that extracts data from social media channels, which not only include social networking sites, such as Facebook, Twitter, Instagram, LinkedIn, etc., but also include blogs, wikis, and news sites. All of these portals share something in common: they are all yielding user-generated content in the form of unstructured data that is accessible only through the web.
+
+For more information see the following [public article](https://www.researchgate.net/publication/286928406_Towards_an_algorithm_for_efficient_use_of_social_network_resources_by_using_Web_scraping_techniques).
 
 ## 5. OTHER SOURCES OF INFORMATION INTEGRATED IN THE PROJECT
 
-* Population Density
+* Population Density  
 Annual population density data at approximately 1 km resolution were obtained from the Landscan global population database [3]. Data is downloaded daily from: https://landscan.ornl.gov/
 
-* Visual Smoke Plume Detection
+* Visual Smoke Plume Detection  
 Aerosol optical depth (AOD) using GOES-East and GOES-West with 30 min temporal resolution [4]. Data is downloaded from: https://www.ospo.noaa.gov/Products/atmosphere/aerosol.html
 
-* Active Fires and Never Burnes Places
+* Active Fires and Never Burnes Places  
 Near real-time fire products are generated within approximately 3 hours from both the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared Imaging Radiometer Suite (VIIRS). Data is downloaded from: https://firms.modaps.eosdis.nasa.gov/
 
-* Burned Area Product (MCD45A1)
+* Burned Area Product (MCD45A1)  
 Monthly gridded 500 meter product, which contains burning and quality assurance information. Data is downloaded from: https://firms.modaps.eosdis.nasa.gov/
 
 ## 6. Team
@@ -130,7 +140,7 @@ Monthly gridded 500 meter product, which contains burning and quality assurance 
 ## 7. Thanks
 
 - Anibal Navalón Torró (Surveillance of the forest fire prevention unit of the 'Comuniad Valenciana', Spain)
-- Jonathan (Voice dubbing for the presentation video)
+- Jonathan Knowles (Voice dubbing for the presentation video)
 
 
 ## REFERENCES
